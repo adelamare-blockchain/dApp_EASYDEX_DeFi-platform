@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7C3AED;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DB2777;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="300" height="60" fill="#111827"/>
+  <g transform="translate(10, 5)">
+    <path d="M25,0 L50,25 L25,50 L0,25 Z" fill="url(#logoGrad)" filter="url(#glow)"/>
+    <path d="M25,10 L40,25 L25,40 L10,25 Z" fill="#111827"/>
+    <path d="M25,15 L35,25 L25,35 L15,25 Z" fill="url(#logoGrad)"/>
+    <circle cx="25" cy="25" r="2.5" fill="#FFFFFF"/>
+    <path d="M12.5,37.5 L37.5,37.5" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <text x="70" y="40" font-family="Arial, sans-serif" font-size="32" font-weight="bold">
+    <tspan fill="#FFFFFF" filter="url(#glow)">EASY</tspan><tspan fill="url(#logoGrad)" filter="url(#glow)">DEX</tspan>
+  </text>
+</svg>
